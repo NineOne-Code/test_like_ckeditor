@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test CKEditor</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="//cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+    <script src="/javascripts/plugin.js"></script>
+  </head>
+  <body>
+    <form action="/post" method="POST">
+      <textarea name="description"><%= description %></textarea>
+      <button type="submit">Save</button>
+    </form>
+    <script>
+      CKEDITOR.replace("description");
+    </script>
+  </body>
+</html>
